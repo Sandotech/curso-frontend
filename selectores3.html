@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Pseudoelementos */
+        p::first-letter{
+            color: aqua;
+        }
+        /* pseudoclases */
+        p:hover{
+            color: aquamarine;
+        }
+        /* Aca selecciona al segundo hijo del div */
+        div p:nth-child(2){
+            color: blue;
+        }
+        p::before{
+            content: "- ";
+        }
+        p::after{
+            content: " WOW";
+        }
+        ::placeholder{
+            color: tomato;
+        }
+        input:focus{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hola</p>
+        <p>Platzi</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
