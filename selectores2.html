@@ -7,17 +7,33 @@
     <title>Document</title>
     <style>
         /* Selectores combinadores */
-        /* Aca selecciona todos los p dentro de div */
-        div p{
-            color: #5DADE2;
+        /* Selector Directo */
+        div > div{
+            background-color: #5DADE2;
+        }
+        .div{
+            background-color: #1ABC9C;
+        }
+        /* Selector de elementos adyacentes */
+        div + div{
+            background: #5DADE2;
+        }
+        /* Selector de hermanos */
+        div ~ p{
+            color: #1ABC9C;
         }
     </style>
 </head>
 <body>
     <div>
-        <p>Hola mundo!</p>
-        <p>Yo soy una etiqueta p</p>
-        <p>Y estoy dentro de div</p>
+        <div>
+            <p>Hola mundo!</p>
+            <div class="div">Yo soy una etiqueta div</div>
+        </div>
     </div>
+    <div>
+        Yo estoy siendo seleccionado de modo adyacente
+    </div>
+    <p>Selector hermano</p>
 </body>
 </html>
